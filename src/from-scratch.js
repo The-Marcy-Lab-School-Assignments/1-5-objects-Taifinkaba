@@ -33,7 +33,10 @@ const weAreNotFriends = (person) => {
   return person.friends.pop();
 };
 
-const listHobbies = () => {
+const listHobbies = (person) => {
+  for(let hob of person.hobbies){
+    console.log(`${person.name} likes ${hob}.`);
+  }
 };
 
 const getNextOpponent = () => {
