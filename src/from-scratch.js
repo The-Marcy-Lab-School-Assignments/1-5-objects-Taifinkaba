@@ -1,10 +1,4 @@
-const coolGreeting = (person, isCool) => {
-  person = {
-    name: 'Sara',
-    bio: 'Too cool 4 skool.',
-    age: 32,
-    isCool: true
-  }
+const coolGreeting = (person) => {
   let peep = person.name.toUpperCase();
   if(isCool === true){
     return `What is UP ${peep}? How you been doin'?`;
@@ -15,7 +9,13 @@ const coolGreeting = (person, isCool) => {
 // console.log(coolGreeting());
 
 
-const haveBirthday = () => {
+const haveBirthday = (person, age) => {
+  person = {
+    age: 18
+  }
+  if(){
+    
+  }
 };
 
 const becomeSecretAgent = () => {
