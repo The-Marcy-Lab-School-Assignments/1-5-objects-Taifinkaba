@@ -1,6 +1,6 @@
 const coolGreeting = (person) => {
   let peep = person.name.toUpperCase();
-  if(isCool === true){
+  if(person.isCool === true){
     return `What is UP ${peep}? How you been doin'?`;
   }else{
     return `Greetings ${person.name}, how have you been lately?`;
@@ -9,16 +9,13 @@ const coolGreeting = (person) => {
 // console.log(coolGreeting());
 
 
-const haveBirthday = (person, age) => {
-  person = {
-    age: 18
-  }
-  if(){
-    
-  }
+const haveBirthday = (person) => {
+  person.age += 1;
 };
 
-const becomeSecretAgent = () => {
+const becomeSecretAgent = (person, spyHandle) => {
+  delete person.name;
+  person.spyHandle = spyHandle;
 };
 
 const carMaker = () => {
