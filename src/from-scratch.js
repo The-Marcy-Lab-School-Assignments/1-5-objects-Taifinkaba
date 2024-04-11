@@ -27,9 +27,10 @@ const carMaker = (name, maker, year) => {
   }; 
 
 };
-console.log(carMaker("civic","honda", 2020));
+// console.log(carMaker("civic","honda", 2020));
 
-const weAreNotFriends = () => {
+const weAreNotFriends = (person) => {
+  return person.friends.pop();
 };
 
 const listHobbies = () => {
