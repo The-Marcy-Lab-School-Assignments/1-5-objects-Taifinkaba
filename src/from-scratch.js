@@ -43,10 +43,12 @@ const getNextOpponent = (team) => {
   return team.matches.length === 0 ? null : team.matches[0].teamName;
 };
 
-const listAllKeys = () => {
+const listAllKeys = (obj) => {
+  return Object.keys(obj);
 };
 
-const listAllValues = () => {
+const listAllValues = (obj) => {
+  return Object.values(obj);
 };
 
 const convertToMatrix = () => {
