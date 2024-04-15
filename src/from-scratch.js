@@ -52,12 +52,12 @@ const listAllValues = (obj) => {
 };
 
 const convertToMatrix = (arr) => {
+  const key = Object.keys(arr[0]);
+  const key2 = [key];
+  
   if (arr.length === 0) {
     return [];
   }
-
-  const key = Object.keys(arr[0]);
-  const key2 = [key];
 
   for (let i = 0; i < arr.length; i++) {
     key2.push(Object.values(arr[i]));
