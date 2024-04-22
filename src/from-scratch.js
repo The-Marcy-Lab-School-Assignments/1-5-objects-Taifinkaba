@@ -7,8 +7,6 @@ const coolGreeting = (person) => {
     return `Greetings ${person.name}, how have you been lately?`;
   }
 };
-// console.log(coolGreeting());
-
 
 const haveBirthday = (person) => {
   person.age += 1;
@@ -28,7 +26,6 @@ const carMaker = (name, maker, year) => {
   }; 
 
 };
-// console.log(carMaker("civic","honda", 2020));
 
 const weAreNotFriends = (person) => {
   return person.friends.pop();
